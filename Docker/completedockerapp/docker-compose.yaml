@@ -1,0 +1,31 @@
+version: "3.6"
+
+services:
+  backend:
+    build: backend
+    hostname: backend-host
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app
+    networks:
+      - app-network
+
+  frontend:
+    build: frontend
+    hostname: frontend-host
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend:/app
+    depends_on:
+      - backend
+    networks:
+      - app-network
+    environment:
+      - BACKEND_URL=http://backend-host:8000/api
+    links:
+      - backend
+
+networks:
+  app-network: {}
