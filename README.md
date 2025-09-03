@@ -7,6 +7,17 @@ It’s a humble tribute to learning by doing: honoring the basics, yet paving th
 
 ---
 
+## 📚 Table of Contents
+
+- [📂 Project Structure](#-project-structure)  
+- [🚀 Projects Overview](#-project-overview)
+- [⚙️ Requirementsk](#-requirements)  
+- [✨ Why this repo?](#-why-this-repo)  
+- [📄 License](#-license)  
+- [🌟 Final Thought](#-final-thought)
+
+---
+
 ## 📂 Project Structure
 
 ```bash
@@ -61,27 +72,23 @@ docker-compose up --build
 ```
 
 
-⚙️ Requirements
+## ⚙️ Requirements
 - Docker
 - Docker Compose (for the full app)
 
-✨ Why this repo?
+## ✨ Why this repo?
 - To learn Docker the practical way—not just theory.
 - To move from single container apps → multi-service apps.
 - To serve as a reference for beginners practicing Docker basics.
 
-📜 License
+## 📜 License
 
 This project is open-sourced.
 Feel free to learn, tinker, and build upon it.
 
-🌟 Final Thought
+## 🌟 Final Thought
 Like a ship learning to sail calm waters before braving the ocean,
 this repo takes you from the gentlest “Hello World” to a fleet of containers
 sailing together in harmony.
 
 ---
-
-👉 Do you want me to also create a **table of contents with quick navigation links** (like jumping directly to each project section), so your README looks extra polished?
-
-
