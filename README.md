@@ -1,94 +1,72 @@
-# 🐳 TuteDude – Docker Learning Projects
+# TuteDude – DevOps Learning Projects 🚀
 
-Welcome to **TuteDude**, a collection of beginner-friendly Docker projects.  
-This repo is designed as a step-by-step journey—from a simple “Hello World” to a multi-service app using Docker Compose.  
-
-It’s a humble tribute to learning by doing: honoring the basics, yet paving the way toward building production-ready systems.
+Welcome to **TuteDude** – a collection of my hands-on learning projects and experiments while exploring **DevOps tools, cloud platforms, and CI/CD pipelines**.  
+This repository is like my personal DevOps lab where I practice, break things, fix them, and document my journey.  
 
 ---
 
-## 📚 Table of Contents
+## 📂 Repository Structure
 
-- [📂 Project Structure](#-project-structure)  
-- [🚀 Projects Overview](#-project-overview)
-- [⚙️ Requirementsk](#-requirements)  
-- [✨ Why this repo?](#-why-this-repo)  
-- [📄 License](#-license)  
-- [🌟 Final Thought](#-final-thought)
+Each folder represents a separate tool, concept, or project I explored:  
 
----
-
-## 📂 Project Structure
-
-```bash
-Docker/
-├── python-hello-world/ # Simple Python Hello World with Docker
-├── nodejs-hello/ # Node.js Hello World with Docker
-├── python-read/ # Python app reading from a text file
-└── completeDockerApp/ # Flask backend + Express frontend (Docker + Compose)
-```
+- **AWS** – Basics of cloud computing, IAM, EC2, S3, CLI setup, and more.  
+- **Docker** – Containerization experiments, Dockerfiles, images, and simple apps.  
+- **Kubernetes** – Learning pods, deployments, services, and configs.  
+- **Terraform** – Infrastructure as Code (IaC) experiments to provision AWS resources.  
+- **Jenkins** – Setting up jobs, pipelines, and automation workflows.  
+- **CircleCI** – CI/CD pipeline configurations with CircleCI.  
+- **GitHub Actions** – Automating workflows using Actions.  
+- **CI/CD Pipelines** – End-to-end pipeline setups combining different tools.  
 
 ---
 
-## 🚀 Projects Overview
+## 🎯 Goals of This Repo
+- Learn DevOps concepts by building **small, practical projects**.  
+- Gain confidence in setting up **CI/CD pipelines**.  
+- Explore different tools and compare how they solve similar problems.  
+- Document my journey for quick reference in the future.  
 
-### 1️⃣ Python Hello World
-- A minimal Python script that prints **Hello, World!**
-- Dockerized with a lightweight Python image.
-**Run:**
-```bash
-docker build -t python-hello ./Docker/python-hello-world
-docker run python-hello
-```
+---
 
-### 2️⃣ Node.js Hello World
-- Basic Node.js app returning a Hello World message.
-- Perfect starting point for learning Node + Docker.
-**Run:**
-```bash
-docker build -t node-hello ./Docker/nodejs-hello
-docker run -p 3000:3000 node-hello
-```
-Visit: http://localhost:3000
+## 🛠️ Tech Stack & Tools
+- **Cloud**: AWS  
+- **Containers**: Docker, Kubernetes  
+- **IaC**: Terraform  
+- **CI/CD**: Jenkins, CircleCI, GitHub Actions  
 
-### 3️⃣ Python Read App
-- A Python app that reads data from a text file and displays it.
-- Includes a Dockerfile for easy containerization.
-**Run:**
-```bash
-docker build -t python-read ./Docker/python-read
-docker run python-read
-```
+---
 
-### 4️⃣ Complete Docker App – Flask + Express
-- Backend: Flask reads data from a text file and exposes an API.
-- Frontend: Express consumes the API and displays the data.
-- Uses Docker Compose for multi-container orchestration.
-- Demonstrates port mappings & service-to-service communication.
-**Run:**
-```bash
-cd Docker/completeDockerApp
-docker-compose up --build
-```
+## 🚀 How to Use
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/Cirarshi/TuteDude.git
+   cd TuteDude
+    ```
+2. Navigate to the folder of your choice (e.g., Docker/, Terraform/).
+3. Follow the instructions in the respective folder’s files.
 
+## 📖 Learning Approach
 
-## ⚙️ Requirements
-- Docker
-- Docker Compose (for the full app)
+- Start with the basics (Hello World apps, simple scripts).
+- Gradually add complexity (multi-container apps, full CI/CD pipelines).
+- Focus on hands-on learning rather than just theory.
 
-## ✨ Why this repo?
-- To learn Docker the practical way—not just theory.
-- To move from single container apps → multi-service apps.
-- To serve as a reference for beginners practicing Docker basics.
+---
+
+## 🌟 Future Plans
+
+- Add monitoring tools like Prometheus & Grafana.
+- Explore Ansible for configuration management.
+- Build a complete DevOps project combining all tools.
+
+---
+
+## 🤝 Contributing
+
+This repo is mainly for my personal learning, but if you spot improvements, feel free to open an issue or PR.
+
+---
 
 ## 📜 License
 
-This project is open-sourced.
-Feel free to learn, tinker, and build upon it.
-
-## 🌟 Final Thought
-Like a ship learning to sail calm waters before braving the ocean,
-this repo takes you from the gentlest “Hello World” to a fleet of containers
-sailing together in harmony.
-
----
+This project is open-source and available for everyone.
