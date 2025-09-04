@@ -8,7 +8,7 @@ Categories of AWS Services:
     - Elastic Kubernetes Services
 
 2. Storage:
-    - S3 (Simple Storage Solution)
+    - S3 (Simple Storage Service)
     - Elastic Block Store 
     - Elastic File System
     - Glacier
@@ -23,4 +23,13 @@ Categories of AWS Services:
     - Snowmobile
     - Database Migration Services
     - Applicaion Discovery Services
+
+===================================================================================================
+
+AWS S3: (Simple Storage Service)
+    1. Storage Limits
+    2. Public URLs
+    3. Programmatical Acess
+
+====================================================================================================
 
