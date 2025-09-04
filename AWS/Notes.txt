@@ -1,0 +1,26 @@
+Categories of AWS Services:
+1. Compute
+    - EC2 (Elastic Compute Cloud)
+    - Elastic beanstalk
+    - Lambda
+    - Elastic Container Services
+    - Elastic Container Registry
+    - Elastic Kubernetes Services
+
+2. Storage:
+    - S3
+    - Elastic Block Store 
+    - Elastic File System
+    - Glacier
+
+3. Database: 
+    - RDS
+    - Dynmo
+    - Elasticache
+
+4. Migration:
+    - Snowball
+    - Snowmobile
+    - Database Migration Services
+    - Applicaion Discovery Services
+
