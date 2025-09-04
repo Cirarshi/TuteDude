@@ -8,7 +8,7 @@ Categories of AWS Services:
     - Elastic Kubernetes Services
 
 2. Storage:
-    - S3
+    - S3 (Simple Storage Solution)
     - Elastic Block Store 
     - Elastic File System
     - Glacier
