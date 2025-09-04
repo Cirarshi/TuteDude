@@ -1,6 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const axios = require("axios");
+const backendURL = process.env.BACKEND_URL || "http://127.0.0.1:5000";
 
 const app = express();
 app.set("view engine", "ejs");
@@ -17,11 +18,10 @@ app.post("/submit", async (req, res) => {
 
   try {
     // Send data to Flask backend
-    const response = await axios.post("http://127.0.0.1:5000/process", {
+    const response = await axios.post(`${backendURL}/process`, {
       name,
       email,
     });
-
     res.send(`<h2>Response from Flask: ${response.data.message}</h2>`);
   } catch (err) {
     res.send(`<h2>Error: ${err.message}</h2>`);

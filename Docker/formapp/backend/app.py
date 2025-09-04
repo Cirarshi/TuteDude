@@ -4,6 +4,10 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
+@app.route('/')
+def home():
+    return "Hello from Back-End!"
+
 @app.route('/process', methods=['POST'])
 def process_form():
     data = request.get_json()
@@ -15,5 +19,4 @@ def process_form():
     return jsonify(response)
 
 if __name__ == '__main__':
-    app.run(port=5000, debug=True)
-    
+    app.run(host="0.0.0.0", port=5000, debug=True)
