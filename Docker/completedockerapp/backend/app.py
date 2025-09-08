@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify
-from business import get_data
+from business.get_data import read_data
 
 app = Flask(__name__)
 
@@ -9,7 +9,7 @@ def home():
 
 @app.route('/api', methods=['GET'])
 def api():
-    data = get_data()
+    data = read_data()
     data = {'dara': data}
     return jsonify(data)
 
