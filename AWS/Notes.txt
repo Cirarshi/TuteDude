@@ -33,3 +33,49 @@ AWS S3: (Simple Storage Service)
 
 ====================================================================================================
 
+AWS Parameter Store: Securely store and retrive Parameter
+
+====================================================================================================
+
+AWS Cloudshell: Cloud-based shell envirnmnet for AWS
+
+====================================================================================================
+
+Server Types:
+    - Compute Engines
+        - AWS, GCP, Azure, Linode, Digital Ocean, Vultr, etc.
+    - Home Server
+
+====================================================================================================
+
+AWS EC2 (Elastic Compute Cloud):
+
+Resorce Nomenclature:
+    - vCPU
+    - Memory
+
+Connecting EC2 instance through ssh:
+ssh -i <key-pair (.pem file)> <user>@<public DNS/ public IP address>
+Example: ssh -i "ul_keypair.pem" ubuntu@ec2-15-223-197-192.ca-central-1.compute.amazonaws.com
+
+Code from local to server:
+    1. scp -i "ul_keypair.pem" ./backend ubuntu@15.223.197.192:~/backend
+    2. Git
+        2.1 Public Repo: git clone <repo-url>
+        2.2 Private Repo:
+            - within the EC2 server / Cloud server
+            - Create a RSA token key
+                ssh-keygen -t rsa -b 4096 -C "<email.id>"
+                EXample: ssh-keygen -t rsa -b 4096 -C "22.utkarsh.kapoor@gmail.com"
+            - 
+                eval "$(ssh-agent -s)"
+            - Show the RSA key
+                ssh-add ~/.ssh/id_rsa
+            - Copy paste the key into your github repo
+                Github repo > Settings > Deploy keys > Add deploy key
+            - Now clone the repo
+                git clone <repo-url>
+
+
+
+
