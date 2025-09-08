@@ -1,11 +1,11 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 from business.get_data import read_data
 
 app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return "Hello from Back-End!"
+    return render_template("index.html")
 
 @app.route('/api', methods=['GET'])
 def api():
