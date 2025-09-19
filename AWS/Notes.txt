@@ -76,6 +76,49 @@ Code from local to server:
             - Now clone the repo
                 git clone <repo-url>
 
+DNS
+Ingress - Reverse proxy
+
+    1. Nginx
+    2. Apache HTTP Server
+    3. Traefik
+    4. Caddy
+
+NGINX = High performance web server (ingress controller/ serve application/ load balancing, protect DoS, protect WAF, service mesh etc.)
+
+1. Installing Nginx: sudo apt install nginx
+2. Running NGINX and checking it's status: 
+    sudo systemctl start nginx
+    sudo systemctl enable nginx
+    sudo systemctl status nginx
+3. Running processors and it's ports
+    lsof
+    sudo lsof -i -P -n
+    sudo lsof -i -P -n | grep LISTEN
+
+Runnimng through no-hup to make it persitant(oomands for it):
+    - nohup python3 app.py &
+
+Setting up reverse proxy on nginx:
+    1. cd /etc/nginx
+    2. cd sites-enabled
+    3. vim test
+    and update following in it:
+    server {
+        listen: 80;
+        listen [::]:80;
+
+        server_name uk.com;
+
+        root /var/www/example.com;
+        location / {
+            proxy_pass http://localhost:8000
+        }
+    }
+
+SSL(Secured Socket layer) & TLS(Transport layer security): HTTPS
+
+
 
 
 
